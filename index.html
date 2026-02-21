@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FleetFlow | Logistics Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo">
+            <i class="ri-truck-line"></i>
+            <span>FleetFlow</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-item active" data-view="dashboard">
+                    <i class="ri-dashboard-3-line"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li class="nav-item" data-view="vehicles">
+                    <i class="ri-car-line"></i>
+                    <span>Vehicles</span>
+                </li>
+                <li class="nav-item" data-view="drivers">
+                    <i class="ri-user-star-line"></i>
+                    <span>Drivers</span>
+                </li>
+                <li class="nav-item" data-view="trips">
+                    <i class="ri-route-line"></i>
+                    <span>Trips</span>
+                </li>
+                <li class="nav-item" data-view="maintenance">
+                    <i class="ri-tools-line"></i>
+                    <span>Maintenance</span>
+                </li>
+                <li class="nav-item" data-view="expenses">
+                    <i class="ri-money-dollar-circle-line"></i>
+                    <span>Expenses</span>
+                </li>
+                <li class="nav-item" data-view="analytics">
+                    <i class="ri-bar-chart-grouped-line"></i>
+                    <span>Analytics</span>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-wrapper">
+        <header class="top-bar">
+            <div class="search-box">
+                <!-- Search can go here -->
+            </div>
+            <div class="user-profile">
+                <div class="notifications">
+                    <i class="ri-notification-3-line"></i>
+                </div>
+                <div class="avatar"></div>
+                <span>Admin User</span>
+            </div>
+        </header>
+
+        <section id="content" class="content-area">
+            <!-- Dynamic content will be injected here -->
+        </section>
+    </main>
+
+    <div id="toast-container" class="toast-container"></div>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content" id="modal-content">
+            <!-- Dynamic Modal Content -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
